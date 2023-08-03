@@ -1,0 +1,26 @@
+.menu-options{
+    height: 83.3vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-option:hover{ 
+    scale: 1.1;
+    transition: 1s;
+}
+
+.option-title{ 
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+}
+
+.text-hover:hover{
+    color: var(--brown-500);
+}
+
+.card-option img{
+    width: 20vw;
+}

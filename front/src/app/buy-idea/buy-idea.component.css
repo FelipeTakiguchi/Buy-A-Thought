@@ -1,0 +1,46 @@
+.buy-button{
+    width: 55vw;
+    font-size: 96px;
+    background-color: var(--orange-400);
+    border-radius: 15px;
+    border: none;
+    padding: 5vw 7.5vw;
+    word-wrap:break-word;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.buy-button:hover{ 
+    scale: 1.1;
+    transition: .6s;
+    color: #fff;
+}
+
+.tittle-idea{
+    font-size: 64px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    align-items: center;
+}
+
+.custom{
+    background-color: var(--orange-400);
+    width: 260px;
+    font-size: 24px;
+    padding: 10px;
+    border:none;
+}
+
+.form-size{
+    width: 280px;
+}
