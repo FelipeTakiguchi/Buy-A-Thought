@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4wQwhGx7AEKItxvnxDAlz81mvIXPpNk/gJGCHTcpoacGd14hXQw/XBtMQ1M6F5x28Z6yNJGrsJKEgoKM2H2esQ==",
+  "dgSpecHash": "0dypOBvDvTeEFqrcSfSHi4Y53mB6/U3x1KwsW/yToF9Qk8IOM05Zes6Nb23igZInxlYgZgjL/9DSAjBiTXzeWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Aluno\\Buy-A-Thought\\back\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

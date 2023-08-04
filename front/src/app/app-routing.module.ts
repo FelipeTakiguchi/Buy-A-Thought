@@ -8,9 +8,13 @@ import { ResultSecretComponent } from './result-secret/result-secret.component';
 import { SellIdeaComponent } from './sell-idea/sell-idea.component';
 import { SellSecretComponent } from './sell-secret/sell-secret.component';
 import { SACComponent } from './sac/sac.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: "", title: "Home", component: HomeComponent },
+  { path: "Log-In", title: "Log In", component: LogInComponent },
+  { path: "Sign-Up", title: "Sign Up", component: SignUpComponent },
   { path: "Buy-Idea", title: "Buy Idea", component: BuyIdeaComponent },
   { path: "Buy-Secret", title: "Buy Secret", component: BuySecretComponent },
   { path: "Buy-Secret/:id", title: "Idea", component: ResultIdeaComponent },

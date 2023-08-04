@@ -16,6 +16,8 @@ import { SellSecretComponent } from './sell-secret/sell-secret.component';
 import { MatInputModule } from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SACComponent } from './sac/sac.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SACComponent } from './sac/sac.component';
     ResultSecretComponent,
     SellIdeaComponent,
     SellSecretComponent,
-    SACComponent
+    SACComponent,
+    LogInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

@@ -18,12 +18,15 @@ export class AppComponent implements OnInit {
       let isNavEnd = val instanceof NavigationEnd;
       if (!isNavEnd)
         return;
-      console.log(location.pathname);
-      if (location.pathname == "/SAC")
-        this.LinkPage = "SAC"
-        
+
       if (location.pathname == "/")
         this.LinkPage = "Menu";
+      else if (location.pathname == "/SAC")
+        this.LinkPage = "SAC"
+      else if (location.pathname == "/Log-In")
+        this.LinkPage = "LogIn"
+      else if (location.pathname == "/Sign-Up")
+        this.LinkPage = "SignUp"
       else if (location.pathname.includes("Idea"))
         this.LinkPage = "Idea";
       else if (location.pathname.includes("Secret"))
