@@ -5,6 +5,9 @@ import { BuyIdeaComponent } from './buy-idea/buy-idea.component';
 import { BuySecretComponent } from './buy-secret/buy-secret.component';
 import { ResultIdeaComponent } from './result-idea/result-idea.component';
 import { ResultSecretComponent } from './result-secret/result-secret.component';
+import { SellIdeaComponent } from './sell-idea/sell-idea.component';
+import { SellSecretComponent } from './sell-secret/sell-secret.component';
+import { SACComponent } from './sac/sac.component';
 
 const routes: Routes = [
   { path: "", title: "Home", component: HomeComponent },
@@ -12,6 +15,10 @@ const routes: Routes = [
   { path: "Buy-Secret", title: "Buy Secret", component: BuySecretComponent },
   { path: "Buy-Secret/:id", title: "Idea", component: ResultIdeaComponent },
   { path: "Buy-Secret/:id", title: "Secret", component: ResultSecretComponent },
+  { path: "Sell", title: "Secret", component: HomeComponent },
+  { path: "Sell-Idea", title: "Sell Idea", component: SellIdeaComponent },
+  { path: "Sell-Secret", title: "Sell Secret", component: SellSecretComponent },
+  { path: "SAC", title: "SAC", component: SACComponent },
 ];
 
 @NgModule({

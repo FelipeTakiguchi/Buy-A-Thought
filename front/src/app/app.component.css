@@ -1,8 +1,14 @@
 header{
     width: 100%;
-    background-color: #F7B801;
     min-height: 10vh;
-    color: var(--brown-500);
+}
+
+.yellow{
+    background-color: var(--yellow-500);
+}
+
+.black{
+    background-color: #000;
 }
 
 .header-container{
@@ -57,10 +63,22 @@ footer .copyright{
     color: #fff;
 }
 
-.index-link:hover{
+.dark:hover{
     color: #fff;
+}
+
+.light:hover{
+    color: var(--brown-500);
 }
 
 .index-link{
     font-size: 32px;
+}
+
+.light{
+    color: #fff;
+}
+
+.dark{
+    color: var(--brown-500);
 }

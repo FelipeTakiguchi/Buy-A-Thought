@@ -9,6 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'BuyAThought';
   @Input() LinkPage: string = "";
+  @Input() HeaderStyle: string = "";
 
   constructor(private router: Router) { }
 
@@ -18,12 +19,21 @@ export class AppComponent implements OnInit {
       if (!isNavEnd)
         return;
       console.log(location.pathname);
+      if (location.pathname == "/SAC")
+        this.LinkPage = "SAC"
+        
       if (location.pathname == "/")
         this.LinkPage = "Menu";
-      else if (location.pathname.includes("/Buy-Idea"))
+      else if (location.pathname.includes("Idea"))
         this.LinkPage = "Idea";
-      else if (location.pathname.includes("/Buy-Secret"))
+      else if (location.pathname.includes("Secret"))
         this.LinkPage = "Secret";
+
+      if (location.pathname.includes("Sell"))
+        this.HeaderStyle = "Sell";
+      else
+        this.HeaderStyle = "Buy";
+
     })
   }
 }

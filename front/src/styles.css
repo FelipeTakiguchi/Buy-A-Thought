@@ -2,6 +2,8 @@
 :root{
     --brown-500: #5A0001;
     --orange-400: #F2A359;
+    --yellow-500: #F7B801;
+    --yellow-500-transparency: rgba(247, 184, 1, 0.4);
 }
 
 body{
@@ -12,5 +14,12 @@ body{
 * {
     font-family: 'Marck Script', cursive;
 }
+
+button, img, select, .index-link {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

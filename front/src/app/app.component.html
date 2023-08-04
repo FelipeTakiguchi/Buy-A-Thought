@@ -1,13 +1,15 @@
-<header>
+<header [ngClass]="{'yellow': HeaderStyle == 'Buy', 'black': HeaderStyle == 'Sell'}">
     <div class="header-container">
-        <h1 class="index-link" routerLink="/">Buy A Thought</h1>
-        <img class="logo" src="assets/logo.png" alt="Logo">
+        <h1 class="index-link dark" routerLink="/" *ngIf="HeaderStyle == 'Buy'">Buy A Thought</h1>
+        <h1 class="index-link light" routerLink="/Sell" *ngIf="HeaderStyle == 'Sell'">Sell A Thought</h1>
+        <img class="logo" src="assets/logo.png" alt="Logo" *ngIf="HeaderStyle == 'Buy'" routerLink="/Sell">
+        <img class="logo" src="assets/logo2.png" alt="Logo" *ngIf="HeaderStyle == 'Sell'" routerLink="/">
     </div>
 </header>
-<main [ngClass]="{'main-bg': LinkPage == 'Menu', 'idea-bg': LinkPage == 'Idea', 'secret-bg': LinkPage == 'Secret'}">
+<main [ngClass]="{'main-bg': LinkPage == 'Menu' || LinkPage == 'SAC', 'idea-bg': LinkPage == 'Idea', 'secret-bg': LinkPage == 'Secret'}">
     <router-outlet></router-outlet>
 </main>
 <footer>
-    <a href="">SAC</a>
+    <a href="/SAC">SAC</a>
     <p class="copyright">© Todos os direitos reservados</p>
 </footer>

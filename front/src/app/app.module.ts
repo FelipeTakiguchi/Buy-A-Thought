@@ -6,11 +6,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { BuySecretComponent } from './buy-secret/buy-secret.component';
 import { BuyIdeaComponent } from './buy-idea/buy-idea.component';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { ResultIdeaComponent } from './result-idea/result-idea.component';
 import { ResultSecretComponent } from './result-secret/result-secret.component';
+import { SellIdeaComponent } from './sell-idea/sell-idea.component';
+import { SellSecretComponent } from './sell-secret/sell-secret.component';
+import { MatInputModule } from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { SACComponent } from './sac/sac.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,10 @@ import { ResultSecretComponent } from './result-secret/result-secret.component';
     BuySecretComponent,
     BuyIdeaComponent,
     ResultIdeaComponent,
-    ResultSecretComponent
+    ResultSecretComponent,
+    SellIdeaComponent,
+    SellSecretComponent,
+    SACComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,9 @@ import { ResultSecretComponent } from './result-secret/result-secret.component';
     NgbModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
