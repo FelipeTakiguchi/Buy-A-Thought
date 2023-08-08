@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       if (!isNavEnd)
         return;
 
-      if (location.pathname == "/")
+      if (location.pathname == "/" || location.pathname == "/Sell")
         this.LinkPage = "Menu";
       else if (location.pathname == "/SAC")
         this.LinkPage = "SAC"

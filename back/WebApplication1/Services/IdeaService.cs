@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using WebApplication1.Models;
+using WebApplication1.Model;
 
 namespace WebApplication1.Services
 {

@@ -10,6 +10,9 @@ import { SellSecretComponent } from './sell-secret/sell-secret.component';
 import { SACComponent } from './sac/sac.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { ViewIdeaComponent } from './view-idea/view-idea.component';
+import { ViewSecretComponent } from './view-secret/view-secret.component';
+import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
 
 const routes: Routes = [
   { path: "", title: "Home", component: HomeComponent },
@@ -17,8 +20,11 @@ const routes: Routes = [
   { path: "Sign-Up", title: "Sign Up", component: SignUpComponent },
   { path: "Buy-Idea", title: "Buy Idea", component: BuyIdeaComponent },
   { path: "Buy-Secret", title: "Buy Secret", component: BuySecretComponent },
-  { path: "Buy-Secret/:id", title: "Idea", component: ResultIdeaComponent },
+  { path: "Buy-Idea/:id", title: "Idea", component: ResultIdeaComponent },
   { path: "Buy-Secret/:id", title: "Secret", component: ResultSecretComponent },
+  { path: "View-Idea/:id", title: "Idea", component: ViewIdeaComponent },
+  { path: "View-Secret/:id", title: "Secret", component: ViewSecretComponent },
+  { path: "Buyed-List", title: "Items", component: BuyedItemsComponent },
   { path: "Sell", title: "Secret", component: HomeComponent },
   { path: "Sell-Idea", title: "Sell Idea", component: SellIdeaComponent },
   { path: "Sell-Secret", title: "Sell Secret", component: SellSecretComponent },

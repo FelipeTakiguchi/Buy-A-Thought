@@ -1,4 +1,4 @@
-namespace backend.DTO;
+namespace WebApplication1.DTO;
 
 public class UserSignup
 {

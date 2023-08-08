@@ -18,6 +18,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SACComponent } from './sac/sac.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { ViewSecretComponent } from './view-secret/view-secret.component';
+import { ViewIdeaComponent } from './view-idea/view-idea.component';
+import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SellSecretComponent,
     SACComponent,
     LogInComponent,
-    SignUpComponent
+    SignUpComponent,
+    ViewSecretComponent,
+    ViewIdeaComponent,
+    BuyedItemsComponent
   ],
   imports: [
     BrowserModule,

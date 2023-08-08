@@ -1,7 +1,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Model
 {
     public class Idea
     {
