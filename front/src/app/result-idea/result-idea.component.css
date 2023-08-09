@@ -55,3 +55,18 @@
     font-size: 96px;
     padding-top: 150px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="got-text"] {
+        line-height: 120%;
+        font-size: 80px;
+        padding-top: 20px;
+    }
+    [class*="small-description-content"] {
+        width: 300px;
+    }
+    [class*="center"] {
+        height: 20%;
+    }
+}

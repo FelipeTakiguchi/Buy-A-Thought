@@ -1,14 +1,14 @@
-.buy-button{
+.buy-button {
     width: 55vw;
     font-size: 96px;
     background-color: var(--orange-400);
     border-radius: 15px;
     border: none;
     padding: 5vw 7.5vw;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,28 +16,39 @@
     height: 85vh;
 }
 
-.buy-button:hover{ 
+.buy-button:hover {
     scale: 1.1;
     transition: .6s;
     color: #fff;
 }
 
-.tittle-idea{
+.tittle-idea {
     font-size: 64px;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: space-between;
     width: 55vw;
     align-items: center;
 }
 
-.custom{
+.custom {
     width: 260px;
-    border:none;
+    border: none;
 }
 
-.form-size{
+.form-size {
     width: 280px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="box"] {
+        flex-direction: column;
+    }
+
+    [class*="buy-button"] {
+        font-size: 28px;
+    }
 }

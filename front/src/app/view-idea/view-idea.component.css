@@ -43,3 +43,21 @@
     font-size: 96px;
     padding-top: 150px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="small-description-content"] {
+        width: 96%;
+        text-justify: inter-word;
+        text-align: justify;
+        font-size: 10px;
+    }
+    [class*="content"] {
+        max-height: 400px;
+        width: 100%;
+        padding: 2%;
+    }
+    [class*="idea-name"] {
+        font-size: 60px;
+    }
+}

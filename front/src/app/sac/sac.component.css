@@ -18,8 +18,9 @@
 }
 
 .button-option{
-    font-size: 20px;
-    padding: 5px;
+    font-size: 36px;
+    padding: 15px;
+    line-height: 32px;
     border: none;
     border-radius: 15px;
     box-shadow: black 2px 2px 2px 1px;
@@ -28,4 +29,16 @@
 .question{
     background-color: aquamarine;
 
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="chat"] {
+        width: 100%;
+    }
+    [class*="button-option"] {
+        font-size: 24px;
+        padding: 10px;
+    }
 }

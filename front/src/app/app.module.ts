@@ -21,6 +21,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ViewSecretComponent } from './view-secret/view-secret.component';
 import { ViewIdeaComponent } from './view-idea/view-idea.component';
 import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatIconModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

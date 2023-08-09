@@ -8,6 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'BuyAThought';
+  showFiller = false;
   @Input() LinkPage: string = "";
   @Input() HeaderStyle: string = "";
 

@@ -14,7 +14,7 @@
     padding-top: 50px;
     color: #fff;
     text-align: center;
-    font-size: 64px;
+    font-size: 330%;
 }
 
 .text-hover:hover{
@@ -22,5 +22,10 @@
 }
 
 .card-option img{
-    width: 20vw;
+    width: 80%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
 }

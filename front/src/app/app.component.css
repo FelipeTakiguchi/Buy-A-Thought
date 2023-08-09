@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    min-height: 10vh;
+    min-height: 12%;
 }
 
 .yellow{
@@ -14,48 +14,55 @@ header{
 .header-container{
     display: flex;
     justify-content: space-between;
+    margin: 0% 2%;
     align-items: center;
-    margin: 0px 1% 0px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
 }
 
 header .logo{
-    width: 6%;
+    width: 12vh;
 }
 
 main{
     width: 100%;
-    min-height: 85vh;    
+    min-height: 85%;   
 }
 
 .main-bg{
     background-image: url(../assets/MainBg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
 }
 
 .idea-bg{
     background-image: url(../assets/IdeaBg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
 }
 
 .secret-bg{
     background-image: url(../assets/SecretBg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat:round;
+    background-size: auto;
 }
 
 footer{
-    min-height: 5vh;
+    min-height: 3%;
     background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2px 10px;
 }
 
 footer *{
-    font-size: 24px;
+    font-size: 100%;
 }
 
 footer .copyright{
@@ -81,4 +88,35 @@ footer .copyright{
 
 .dark{
     color: var(--brown-500);
+}
+
+.menu{
+    color: #fff;
+}
+
+.menu:hover{
+    color: rgb(43, 39, 39);
+}
+
+.menu-button, .icon-btn{
+    border: none;
+}
+
+.example-container{
+    width: 240px;
+}
+
+.icon-btn{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="header-container"] {
+        flex-direction: column;
+    }
+    [class*="link"] {
+        width: 100%;
+    }
 }
