@@ -13,16 +13,15 @@ header{
 
 .header-container{
     display: flex;
-    justify-content: space-between;
-    margin: 0% 2%;
     align-items: center;
+    margin: 0 2%;    
 }
 
 .link{
+    width: 100%;
     display: flex;
+    justify-content:space-between;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
 }
 
 header .logo{
@@ -98,6 +97,14 @@ footer .copyright{
     color: rgb(43, 39, 39);
 }
 
+.black-menu{
+    color: #000;
+}
+
+.black-menu:hover{
+    color: #fff;
+}
+
 .menu-button, .icon-btn{
     border: none;
 }
@@ -111,12 +118,16 @@ footer .copyright{
     margin-left: 15px;
 }
 
+.right{
+    margin-left: 83%;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*="header-container"] {
+    [class*="link"] {
         flex-direction: column;
     }
-    [class*="link"] {
-        width: 100%;
+    [class*="header-container"] {
+        padding-top: 4%;
     }
 }

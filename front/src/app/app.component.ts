@@ -11,8 +11,13 @@ export class AppComponent implements OnInit {
   showFiller = false;
   @Input() LinkPage: string = "";
   @Input() HeaderStyle: string = "";
+  @Input() IsOpened: boolean = false;
 
   constructor(private router: Router) { }
+
+  changeState(){
+    this.IsOpened = !this.IsOpened;
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe((val) => {
