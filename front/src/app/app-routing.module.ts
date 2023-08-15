@@ -13,6 +13,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ViewIdeaComponent } from './view-idea/view-idea.component';
 import { ViewSecretComponent } from './view-secret/view-secret.component';
 import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 const routes: Routes = [
   { path: "", title: "Home", component: HomeComponent },
@@ -28,7 +31,10 @@ const routes: Routes = [
   { path: "Sell", title: "Secret", component: HomeComponent },
   { path: "Sell-Idea", title: "Sell Idea", component: SellIdeaComponent },
   { path: "Sell-Secret", title: "Sell Secret", component: SellSecretComponent },
+  { path: "Wallet", title: "Wallet", component: WalletComponent },
   { path: "SAC", title: "SAC", component: SACComponent },
+  { path: "Profile", title: "Profile", component: ProfileComponent },
+  { path: "Profile/:profile", title: "User Profile", component: ViewProfileComponent },
 ];
 
 @NgModule({

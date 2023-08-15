@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
     --brown-500: #5A0001;
-    --orange-400: #F2A359;
+    --brown-500-transparency: rgba(90, 0, 1, 0.8);
+    --orange-400: rgb(242, 163, 89);
+    --orange-400-transparency: rgba(242, 163, 89, 0.75);
     --yellow-500: #F7B801;
     --yellow-500-transparency: rgba(247, 184, 1, 0.4);
 }

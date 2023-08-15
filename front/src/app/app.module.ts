@@ -23,6 +23,9 @@ import { ViewIdeaComponent } from './view-idea/view-idea.component';
 import { BuyedItemsComponent } from './buyed-items/buyed-items.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { WalletComponent } from './wallet/wallet.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     SignUpComponent,
     ViewSecretComponent,
     ViewIdeaComponent,
-    BuyedItemsComponent
+    BuyedItemsComponent,
+    WalletComponent,
+    ProfileComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,

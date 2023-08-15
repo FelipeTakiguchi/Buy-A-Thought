@@ -12,13 +12,13 @@
                         [ngClass]="{'yellow': HeaderStyle == 'Buy', 'black': HeaderStyle == 'Sell'}">
                         <mat-drawer #drawer class="example-sidenav" mode="side"
                             [ngClass]="{'yellow': HeaderStyle == 'Buy', 'black': HeaderStyle == 'Sell'}">
-                            <button class="icon-btn" (click)="showFiller = !showFiller" mat-raised-button
+                            <button routerLink="Wallet" class="icon-btn" (click)="showFiller = !showFiller" mat-raised-button
                                 [ngClass]="{'yellow': HeaderStyle == 'Buy', 'black': HeaderStyle == 'Sell'}">
                                 <span class="material-symbols-outlined" [ngClass]="{'black-menu': HeaderStyle == 'Buy', 'menu': HeaderStyle == 'Sell'}">
                                     wallet
                                 </span>
                             </button>
-                            <button class="icon-btn" (click)="showFiller = !showFiller" mat-raised-button
+                            <button routerLink="Profile" class="icon-btn" (click)="showFiller = !showFiller" mat-raised-button
                                 [ngClass]="{'yellow': HeaderStyle == 'Buy', 'black': HeaderStyle == 'Sell'}">
                                 <span class="material-symbols-outlined" [ngClass]="{'black-menu': HeaderStyle == 'Buy', 'menu': HeaderStyle == 'Sell'}">
                                     person
